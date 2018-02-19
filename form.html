@@ -22,8 +22,13 @@
         <label>Car plate:
             <input type="text" name="client-car"
             placeholder="Car plate number" required
-            pattern="[A-Z]{2}[\d]{4}[A-Z]{2}">
+            pattern="[A-Z]{2}[\d]{4}[A-Z]{2}"
+            title="AA1234BB">
         </label>
+        <br>
+            <input type="radio" name="client-gender" value="male">
+            <input type="radio" name="client-gender" value="female">
+            <input type="radio" name="client-gender" value="other">
         <br>
         <input type="submit">
         <input type="reset">
