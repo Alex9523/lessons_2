@@ -11,10 +11,18 @@
  <form method="POST" action="">
         <label for="client-name">Name:</label>
         <input id="client-name" type="text" 
-            placeholder="Your name" name="client-name">
+            placeholder="Your name" name="client-name"
+            required>
         <br>
         <label>Email:
-            <input type="email" name="client-email">
+            <input type="email" name="client-email"
+            placeholder="Your email" required>
+        </label>
+        <br>
+        <label>Car plate:
+            <input type="text" name="client-car"
+            placeholder="Car plate number" required
+            pattern="[A-Z]{2}[\d]{4}[A-Z]{2}">
         </label>
         <br>
         <input type="submit">
